@@ -69,6 +69,9 @@ GEM
     bindex (0.8.1)
     bootsnap (1.16.0)
       msgpack (~> 1.2)
+    bootstrap_form (5.0.0)
+      actionpack (>= 5.2)
+      activemodel (>= 5.2)
     builder (3.2.4)
     concurrent-ruby (1.2.2)
     crass (1.0.6)
@@ -158,6 +161,10 @@ GEM
       thor (~> 1.0)
       zeitwerk (~> 2.5)
     rake (13.0.6)
+    ransack (3.2.1)
+      activerecord (>= 6.1.5)
+      activesupport (>= 6.1.5)
+      i18n
     redis (4.8.1)
     reline (0.3.2)
       io-console (~> 0.5)
@@ -194,12 +201,14 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap
+  bootstrap_form
   cssbundling-rails
   debug
   jsbundling-rails
   kaminari
   puma (~> 5.0)
   rails (~> 7.0.4, >= 7.0.4.2)
+  ransack (= 3.2.1)
   redis (~> 4.0)
   sprockets-rails
   sqlite3 (~> 1.4)
